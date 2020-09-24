@@ -190,11 +190,13 @@ header nav ul {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-image: url('../img/hero-image.png');
+  background-image: url('../img/hero-image.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 600px;
+  min-height: 500px;
+  border-top: solid 15px #7edbdc;
+  border-bottom: solid 15px #7edbdc;
 }
 
 /*Aside*/
@@ -260,7 +262,7 @@ header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column;
   padding-bottom: 50px;
   background-color: #7edbdc;
 }
@@ -270,6 +272,10 @@ header nav ul {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.portfolio-section .portfolio-image {
+  width: 100%;
 }
 
 .portfolio-image {
@@ -421,10 +427,6 @@ footer ul {
   /* Tablet styles here */
 
   /*General Styles*/
-  .content-wrapper {
-    max-width: 80%;
-  }
-
   h2 {
     font-size: 2.5em;
   }
@@ -438,11 +440,75 @@ footer ul {
   }
 
   li {
-    font-size: 1.375em;
+    font-size: 1.2em;
     font-weight: 500;
   }
 
 
+  }
+
+/*Header*/
+header {
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+header .content-wrapper {
+  justify-content: space-between;
+}
+
+header figure {
+  width: 30%;
+}
+
+header nav {
+  width: 50%;
+}
+/*Hero Area*/
+.hero-area {
+  min-height: 800px;
+}
+
+
+/*Aside*/
+.aside .content-wrapper {
+  max-width: 80%;
+}
+
+/*About*/
+#about .content-wrapper {
+  max-width: 80%;
+}
+
+.about-header {
+  background-size:contain;
+}
+
+#about figure {
+  min-width: 30%;
+}
+
+/*Portfolio*/
+.portfolio-header {
+  background-size:contain;
+}
+
+.portfolio-section {
+  width: 100%;
+}
+
+.portfolio-section .portfolio-image {
+  flex-flow: column wrap;
+
+}
+
+
+
+
+/*Contact*/
+.contact-header {
+  background-size:contain;
+}
 
 }
 
