@@ -190,7 +190,7 @@ header nav ul {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-image: url('../img/hero-image.jpg');
+  background-image: url('../img/hero-image-1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -262,7 +262,7 @@ header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column;
+  flex-flow: column wrap;
   padding-bottom: 50px;
   background-color: #7edbdc;
 }
@@ -311,29 +311,27 @@ header nav ul {
   margin: 0 30px;
 }
 
+#contact .contact-text h4 {
+  letter-spacing: 2px;
+}
+
 /*Footer*/
 footer .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column;
 }
 
 footer .content-wrapper .social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  width: 80%;
+  width: 50%;
 }
 
 footer ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  flex-flow: row wrap;
   padding: 0;
-  width: 50%;
 }
 /* ==========================================================================
    Helper classes
@@ -444,9 +442,6 @@ footer ul {
     font-weight: 500;
   }
 
-
-  }
-
 /*Header*/
 header {
   justify-content: space-around;
@@ -458,7 +453,7 @@ header .content-wrapper {
 }
 
 header figure {
-  width: 30%;
+  width: 25%;
 }
 
 header nav {
@@ -493,25 +488,74 @@ header nav {
   background-size:contain;
 }
 
-.portfolio-section {
-  width: 100%;
-}
-
 .portfolio-section .portfolio-image {
-  flex-flow: column wrap;
-
+  width: 45%;
 }
-
-
-
 
 /*Contact*/
 .contact-header {
   background-size:contain;
 }
 
+#contact .content-wrapper {
+  flex-flow: column;
 }
 
+#contact .contact-text {
+  flex-flow: column;
+}
+
+/*Footer*/
+footer .content-wrapper {
+  flex-flow: column;
+}
+
+footer .content-wrapper .social {
+  width: 40%;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+/*Desktop Styles*/
+header {
+  padding: 10px 0;
+}
+
+header figure {
+  width: 20%;
+  padding-left: 60px;
+}
+
+header nav {
+  padding-top: 10px;
+  width: 40%;
+  }
+
+
+/*Aside*/
+.aside .content-wrapper {
+  max-width: 60%;
+}
+
+/*About*/
+#about .content-wrapper {
+  max-width: 60%;
+}
+
+/*Portfolio*/
+.portfolio-header {
+  margin: 50px;
+}
+
+.portfolio-section .portfolio-image {
+  width: 40%;
+}
+
+/*Contact*/
+.contact-header {
+  margin: 50px;
+}
+}
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
