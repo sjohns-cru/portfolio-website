@@ -190,7 +190,7 @@ header nav ul {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-image: url('../img/hero-image-1.png');
+  background-image: url('../img/hero-image-1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
